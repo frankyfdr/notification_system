@@ -1,0 +1,60 @@
+.notify-main-container {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: block;
+}
+.alert {
+    margin-bottom: 0 !important;
+
+    
+    max-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: auto;
+
+    flex-flow: row nowrap;
+}
+.progress-bar {
+    height: 3px;
+}
+.progress {
+    height: auto !important;
+}
+.alert-text {
+    animation: in 0.9s ease-in-out forwards;
+}
+
+.notify-item {
+    animation: in 0.3s ease-in-out forwards;
+    width: 100%;
+    float: right;
+}
+
+@keyframes in {
+    0% {
+        width: 0%;
+        font-size: 1%;
+        text-align: center;
+    }
+
+    100% {
+        width: 100%;
+        
+    }
+}
+
+@keyframes out {
+    0% {
+        width: 110%;
+        transform: skewX(40deg);
+    }
+
+    50% {
+        width: 120%;
+    }
+    100% {
+        width: 0%;
+    }
+}

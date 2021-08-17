@@ -1,6 +1,6 @@
 
 
-import {Notify,sendAlert} from "./notify/Notify"
+import {Notify,sendAlert} from "./Notify"
 import { Button } from 'react-bootstrap'
 
 function App() {

@@ -1,0 +1,65 @@
+.notify-main-container {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: block;
+}
+.alert {
+    margin-bottom: 0 !important;
+
+    max-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.5);
+    flex-flow: row nowrap;
+}
+.progress-bar {
+    height: 3px;
+}
+.progress {
+    height: auto !important;
+}
+.alert-text {
+    animation: in 0.9s ease-in-out forwards;
+}
+
+.notify-item {
+    animation: in 0.3s ease-in-out forwards;
+    width: 100%;
+    float: right;
+    -webkit-box-shadow: -6px 7px 35px -1px rgba(0, 0, 0, 0.73);
+    box-shadow: -6px 7px 35px -1px rgba(0, 0, 0, 0.73);
+    margin: 4px;
+    
+}
+
+@keyframes in {
+    0% {
+        width: 0%;
+        font-size: 1%;
+        text-align: center;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes out {
+    0% {
+        width: 110%;
+        transform: skewX(40deg);
+        font-size: 50%;
+    }
+
+    50% {
+        width: 120%;
+        font-size: 50%;
+    }
+    100% {
+        width: 0%;
+        font-size: 50%;
+    }
+}

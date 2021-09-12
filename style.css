@@ -1,9 +1,11 @@
 .notify-main-container {
-    width: 20%;
+    width: 'auto';
     position: absolute;
-    right: 0;
-    height: 100%;
+    right:0;
+    max-width: 350px;
+    height: 'auto';
     display: block;
+    z-index: 1;
 }
 .alert {
     margin-bottom: 0 !important;
@@ -32,6 +34,7 @@
     -webkit-box-shadow: -6px 7px 35px -1px rgba(0, 0, 0, 0.73);
     box-shadow: -6px 7px 35px -1px rgba(0, 0, 0, 0.73);
     margin: 4px;
+    z-index: 6;
     
 }
 
